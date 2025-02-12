@@ -12,4 +12,3 @@ ggplot(countries, aes(x = gni_per_capita)) +
   geom_histogram(breaks = bins, fill = 'skyblue', color = 'black') +  # Lighter blue color
   xlab("GNI Per Capita ($)") +
   ggtitle("Gross National Income Per Capita Worldwide")
-  )
