@@ -9,8 +9,7 @@ data <- read_csv("vote.csv")
 
 # OR Separate 'Birthdate' column into two columns for month and day
 data <- data %>%
-  separate(birthdate, into = c("day", "month"))
-data$month <- type.convert(data$month)
+  separate(birthdate, into = c("month", "day", "year"))
 
 # Counting the number of people per birth month
 birth_month_counts <- table(data$month)
